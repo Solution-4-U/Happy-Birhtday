@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 封面 -->
+    <div class="container">
+        <div class="row">
+            <div class="birth-cover-container">
+                <button id="birth-start-btn" disabled>Loading...</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 歌曲 -->
+    <audio class="song" controls loop style="display: none; opacity: 0">
+        <source src="music/index.mp3" />
+    </audio>
+
+    <!-- 彩带 -->
+    <canvas id="brith-confetti"></canvas>
+
+    <!-- 主内容 -->
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+                <!-- 横幅图 -->
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="banner.png">
+                </div>
+
+                <!-- 寿星 -->
+                <div class="col-12  text-center">
+                    <div id="name" class="birth-people-name">Ashra</div>
+                </div>
+
+                <!-- 祝词 -->
+                <div class="col-12 text-center">
+                    <div class="birth-greeting-word">
+                        <div id="greeting-word" class="typing">
+                            <h2><span>Happy Birthday!，</span><i id="inline-name" class="birth-inline-people-name">Ashra</i><span id="people-type">❤️</span></h2>
+                            <h2>Wishing you a day filled with love, laughter, and all your favorite things.</h2>
+                            <h2>🎁 May all your dreams and goals come true this year.</h2>
+                            <h2>🧁 Enjoy every moment of your special day — you truly deserve it.</h2>
+                            <h2>✨ Keep smiling, keep shining, and never stop being amazing!</h2>
+                            <h2>❤️ You're not just my cousin, you're also a great friend I’m lucky to have.</h2>
+                            <h2>🎈 Sending you lots of love and warm wishes on your birthday!</h2>
+                            <h2>🥳 Ashra, may your birthday be as awesome and fun as you are!</h2>
+                            <h2>🎁 Wishing you, Ashra, a year full of success, joy, and exciting new adventures.</h2>
+                            <h2>❤️ Ashra, you're not just a cousin, you're a true friend and a blessing in my life.</h2>
+                            <h2>✨ Ashra, stay positive, stay strong, and always keep that beautiful smile on!</h2>
+                            <h2>سالگرہ کی خوشی میں یہ دعا ہے میری،
+                                زندگی میں کبھی نہ آئے کوئی کمی تیرے نصیب کی۔
+                                ہر خواہش ہو تیری پوری، ہر خوشی تیرے قدم چومے،
+                                یوں ہی ہنستا رہے تو، ہر صبح ہو تیرے لیے نئی۔
+                                🎂✨🎉</h2>
+                        </div>
+                        <span id="typed" style="white-space: pre;"></span>
+                    </div>
+                </div>
+
+                <!-- 蛋糕图 -->
+                <div class="col-12 col-xl-3 birth-cake">
+                    <img src="img/cake.gif" alt="cake.gif">
+                </div>
+
+                <!-- 版权 -->
+                <div class="col-12 text-center">
+                    <span class="birth-greeting-word" id="author">&copy;Hackerazmi</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 气球图 -->
+        <img src="img/balloon.png" alt="balloon" class="brith-balloon">
+    </div>
+
+    <script src="js/lib/snowflakes.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/typed.min.js"></script>
+    <script src="js/lib/dayjs.min.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
